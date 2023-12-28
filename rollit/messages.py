@@ -8,4 +8,3 @@ HLP_SEPARATOR = "set the word separator (default: '-')"
 
 # Program Description.
 MSG_PROG_DESCRIPTION = "Dice-based passphrase generator."
-
