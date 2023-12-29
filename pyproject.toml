@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rollit"
+description = "A dice-based passphrase generator"
+authors = [{name = "mm-cr"}]
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.26.2"]
+
+keywords = ["security", "passphrases"]
+classifiers = [
+  "Topic :: Utilities",
+  "Programming Language :: Python"
+]
+
+[project.optional-dependencies]
+dev = [
+  "black==23.10.0",
+  "isort==5.12.0",
+  "mypy==1.6.1",
+  "pylint==3.0.1",
+  "pytest>=7.4.2",
+  "typing_extensions==4.9.0"
+]
+
+[project.urls]
+"Repository" = "https://github.com/mm-cr/rollit.git"
+
+[project.scripts]
+rollit = "rollit.__main__:main"
+
