@@ -4,8 +4,9 @@ Rollit: Dice-based passphrase generator.
 
 import argparse
 
-import pass_generator
-from messages import HLP_NUM_WORDS, HLP_SEPARATOR, MSG_PROG_DESCRIPTION
+
+from rollit.messages import HLP_NUM_WORDS, HLP_SEPARATOR, MSG_PROG_DESCRIPTION
+from rollit.pass_generator import generate_passphrase
 
 
 def main():
@@ -22,7 +23,7 @@ def main():
     args = parser.parse_args()
 
     # Generate passphrase.
-    passphrase: str = pass_generator.generate_passphrase(args.number, args.separator)
+    passphrase: str = generate_passphrase(args.number, args.separator)
 
     # Output.
     print(passphrase)
