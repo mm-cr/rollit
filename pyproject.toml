@@ -14,7 +14,8 @@ dependencies = ["numpy>=1.26.2"]
 keywords = ["security", "passphrases"]
 classifiers = [
   "Topic :: Utilities",
-  "Programming Language :: Python"
+  "Programming Language :: Python",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)"
 ]
 
 [project.optional-dependencies]
